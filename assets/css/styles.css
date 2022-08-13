@@ -261,6 +261,10 @@ img {
 
 /* Active link */
 
+.active-link {
+  color: var(--first-color);
+}
+
 /*=============== HOME ===============*/
 
 .home {
@@ -801,11 +805,30 @@ img {
   transform: translateY(1rem);
 }
 
-/*=============== SCROLL BAR ===============*/
-
 /*=============== SCROLL UP ===============*/
 
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: var(--first-color);
+  display: inline-flex;
+  padding: 0.35rem;
+  color: var(--title-color-black);
+  font-size: 1.25rem;
+  z-index: var(--z-tooltip);
+  transition: 0.3s;
+}
+
+.scrollup:hover {
+  transform: translateY(-0.25rem);
+}
+
 /* Show Scroll Up*/
+
+show-scroll {
+  bottom: 3rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
